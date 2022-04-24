@@ -1,0 +1,10 @@
+CREATE TABLE blood(
+	d_id INT PRIMARY KEY AUTO_INCREMENT,
+	b_type CHAR(1) NOT NULL,
+	rh CHAR(1) NOT NULL,
+	aadhar VARCHAR(12) NOT NULL,
+	bb_no INT NOT NULL,
+	amount INT NOT NULL,
+	FOREIGN KEY (aadhar) REFERENCES donor(aadhar),
+	FOREIGN KEY (bb_no) REFERENCES bloodbank(bb_no)
+);

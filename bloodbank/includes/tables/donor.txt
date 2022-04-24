@@ -1,0 +1,12 @@
+CREATE TABLE donor(
+	aadhar VARCHAR(12) PRIMARY KEY,
+	fname VARCHAR(20) NOT NULL,
+	lname VARCHAR(20) NOT NULL,
+	weight INT NOT NULL,
+	phone_no VARCHAR(10) NOT NULL,
+	age INT NOT NULL,
+	email VARCHAR(30) NOT NULL,
+	gender VARCHAR(10) NOT NULL
+	username VARCHAR(20) NOT NULL,
+	FOREIGN KEY (username) REFERENCES users(username)
+);

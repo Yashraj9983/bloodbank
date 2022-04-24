@@ -1,0 +1,7 @@
+CREATE TABLE bloodbank(
+	bb_no INT PRIMARY KEY AUTO_INCREMENT,
+	address VARCHAR(30) NOT NULL,
+	phone_no VARCHAR(10) NOT NULL,
+	username VARCHAR(20) NOT NULL,
+	FOREIGN KEY (username) REFERENCES users(username)
+);
